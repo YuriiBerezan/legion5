@@ -1,0 +1,114 @@
+$icons: "intel", "16", "rtx", "AI";
+
+@each $iconName in $icons {
+  .icon-#{$iconName}::before {
+    @media screen and (max-width: 767px) {
+      background-image: url(../img/#{$iconName}_m.png);
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1599px) {
+      background-image: url(../img/#{$iconName}_t.png);
+    }
+    @media screen and(min-width:$desctop) {
+      background-image: url(../img/#{$iconName}.png);
+    }
+  }
+}
+
+.productivity {
+  width: 40vw;
+
+  //   display: flex;
+  //   flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    // padding-top: 5px;
+    margin-left: 60%;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    padding-top: 15px;
+    margin-left: 60%;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-top: 110px;
+    margin-left: 55%;
+  }
+
+  //   &__item {
+
+  //   }
+  @media screen and (max-width: 767px) {
+    &__item:last-child {
+      margin-bottom: 0;
+    }
+    &__item {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      width: calc(50% - 15px);
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    &__item {
+      width: calc(50% - 30px);
+      margin-bottom: 140px;
+    }
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    &__item:nth-child(2n) {
+      margin-right: 0;
+    }
+    &__item:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item::before {
+    display: block;
+    content: "";
+
+    // background-color: $team-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (max-width: 767px) {
+      height: 30px;
+      margin-bottom: 5px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1599px) {
+      height: 80px;
+      margin-bottom: 30px;
+    }
+    @media screen and(min-width:$desctop) {
+      height: 131px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__description {
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.03em;
+    @media screen and (max-width: 767px) {
+      font-size: 7px;
+      line-height: 1.1;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1599px) {
+      font-size: 10px;
+      line-height: 1.1;
+    }
+    @media screen and (min-width: $desctop) {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+  }
+}

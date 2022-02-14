@@ -27,7 +27,7 @@
       background-image: url(../img/Legion_mobile@2x.jpg);
     }
   }
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
     background-image: url(../img/Legion_tab.jpg);
     height: 433px;
     @media (min-device-pixel-ratio: 2),
@@ -55,7 +55,7 @@
     top: 50%;
     height: 100px;
   }
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
     left: 7%;
     top: 45%;
     height: 200px;
@@ -83,7 +83,7 @@
     left: 20%;
     bottom: 14%;
   }
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
     font-size: 45px;
     left: 20%;
     bottom: 10%;
@@ -103,7 +103,7 @@
     bottom: 10%;
     height: 75px;
   }
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
     right: 0;
     bottom: 10%;
     height: 150px;
