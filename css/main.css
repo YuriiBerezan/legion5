@@ -332,16 +332,44 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .game-productivity__legion-open {
-    height: 50%;
-    right: 35%;
-    top: 35%;
+    height: 30%;
+    right: 55%;
+    top: 60%;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .game-productivity__legion-open {
     right: 45%;
-    top: 50%;
+    top: 55%;
+  }
+}
+
+.game-productivity__legion-closed {
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .game-productivity__legion-closed {
+    right: 40%;
+    top: 20%;
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .game-productivity__legion-closed {
+    height: 30%;
+    right: 50%;
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .game-productivity__legion-closed {
+    right: 50%;
+    top: 100%;
+    transform: translate(10%, -215%);
   }
 }
 
@@ -532,6 +560,489 @@ a {
   .productivity__description {
     font-size: 24px;
     line-height: 1.4;
+  }
+}
+
+.new-level {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .new-level {
+    height: 271px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .new-level {
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .new-level {
+    height: 1083px;
+  }
+}
+
+.new-level__description {
+  width: 35vw;
+  position: absolute;
+  top: 11%;
+  left: 60%;
+  text-align: left;
+}
+
+.new-level__overlay {
+  background-color: #212121;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .new-level__overlay {
+    background-image: url(../img/11A_Legion_5P_Hero_mobile.jpg);
+    height: 271px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .new-level__overlay {
+    background-image: url(../img/11A_Legion_5P_Hero_mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .new-level__overlay {
+    background-image: url(../img/11A_Legion_5P_Hero_tab.jpg);
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
+  .new-level__overlay {
+    background-image: url(../img/11A_Legion_5P_Hero_tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .new-level__overlay {
+    background-image: url(../img/11A_Legion_5P_Hero_desctop.jpg);
+    height: 1083px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .new-level__overlay {
+    background-image: url(../img/11A_Legion_5P_Hero_desctop@2x.jpg);
+  }
+}
+
+.new-level__title {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(123deg, #4facfe, #00f2fe);
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 767px) {
+  .new-level__title {
+    font-size: 15px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .new-level__title {
+    font-size: 35px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .new-level__title {
+    font-size: 76px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 20px;
+  }
+}
+
+.new-level__text {
+  color: white;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .new-level__text {
+    font-size: 7px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .new-level__text {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .new-level__text {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
+
+.new-level__icon {
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .new-level__icon {
+    left: 5%;
+    bottom: 5%;
+    height: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .new-level__icon {
+    left: 5%;
+    bottom: 5%;
+    height: 15%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .new-level__icon {
+    left: 6%;
+    bottom: 9%;
+  }
+}
+
+.Geforse {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .Geforse {
+    height: 271px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .Geforse {
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .Geforse {
+    height: 1083px;
+  }
+}
+
+.Geforse__description {
+  width: 28vw;
+  position: absolute;
+  top: 11%;
+  left: 5%;
+  text-align: left;
+}
+
+.Geforse__overlay {
+  background-color: #212121;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .Geforse__overlay {
+    background-image: url(../img/04_Legion_5P_Intel_mobile.jpg);
+    height: 271px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .Geforse__overlay {
+    background-image: url(../img/04_Legion_5P_Intel_mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .Geforse__overlay {
+    background-image: url(../img/04_Legion_5P_Intel_tab.jpg);
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
+  .Geforse__overlay {
+    background-image: url(../img/04_Legion_5P_Intel_tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .Geforse__overlay {
+    background-image: url(../img/04_Legion_5P_Intel_desctop.jpg);
+    height: 1083px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .Geforse__overlay {
+    background-image: url(../img/04_Legion_5P_Intel_desctop@2x.jpg);
+  }
+}
+
+.Geforse__title {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(123deg, #4facfe, #00f2fe);
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 767px) {
+  .Geforse__title {
+    font-size: 15px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .Geforse__title {
+    font-size: 35px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .Geforse__title {
+    font-size: 76px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 20px;
+  }
+}
+
+.Geforse__text {
+  color: white;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .Geforse__text {
+    font-size: 7px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .Geforse__text {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .Geforse__text {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
+
+.field-of-view {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .field-of-view {
+    height: 271px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .field-of-view {
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .field-of-view {
+    height: 1083px;
+  }
+}
+
+.field-of-view__description {
+  position: absolute;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .field-of-view__description {
+    width: 24vw;
+    left: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .field-of-view__description {
+    width: 24vw;
+    top: 10%;
+    left: 70%;
+  }
+}
+
+.field-of-view__overlay {
+  background-color: #212121;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .field-of-view__overlay {
+    background-image: url(../img/05_Legion_5P_Intel_Closeup_mobile.jpg);
+    height: 271px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .field-of-view__overlay {
+    background-image: url(../img/05_Legion_5P_Intel_Closeup_mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .field-of-view__overlay {
+    background-image: url(../img/05_Legion_5P_Intel_Closeup_tab.jpg);
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
+  .field-of-view__overlay {
+    background-image: url(../img/05_Legion_5P_Intel_Closeup_tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .field-of-view__overlay {
+    background-image: url(../img/05_Legion_5P_Intel_Closeup_desctop.jpg);
+    height: 1083px;
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .field-of-view__overlay {
+    background-image: url(../img/05_Legion_5P_Intel_Closeup_desctop@2x.jpg);
+  }
+}
+
+.field-of-view__title {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(123deg, #4facfe, #00f2fe);
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 767px) {
+  .field-of-view__title {
+    font-size: 15px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .field-of-view__title {
+    font-size: 35px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .field-of-view__title {
+    font-size: 76px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 20px;
+  }
+}
+
+.field-of-view__text {
+  color: white;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .field-of-view__text {
+    font-size: 7px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .field-of-view__text {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .field-of-view__text {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
+
+.field-of-view__icon {
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .field-of-view__icon {
+    right: 5%;
+    bottom: 2%;
+    height: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .field-of-view__icon {
+    right: 5%;
+    bottom: 5%;
+    height: 10%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .field-of-view__icon {
+    right: 6%;
+    bottom: 9%;
   }
 }
 /*# sourceMappingURL=main.css.map */

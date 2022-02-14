@@ -1,4 +1,4 @@
-.game-productivity {
+.Geforse {
   position: relative;
   @media screen and (max-width: 767px) {
     height: 271px;
@@ -10,127 +10,94 @@
     height: 1083px;
   }
 }
-.game-productivity__overlay {
+
+.Geforse__description {
+  width: 28vw;
+  position: absolute;
+  top: 11%;
+  left: 5%;
+  text-align: left;
+}
+.Geforse__overlay {
   background-color: $main-color;
   // width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media screen and (max-width: 767px) {
-    background-image: url(../img/layer_mobile.jpg);
+    background-image: url(../img/04_Legion_5P_Intel_mobile.jpg);
     height: 271px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/layer_mobile@2x.jpg);
+      background-image: url(../img/04_Legion_5P_Intel_mobile@2x.jpg);
     }
   }
   @media screen and (min-width: $tablet) and (max-width: 1599px) {
-    background-image: url(../img/Layer_tab.jpg);
+    background-image: url(../img/04_Legion_5P_Intel_tab.jpg);
     height: 433px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/Layer_tab@2x.jpg);
+      background-image: url(../img/04_Legion_5P_Intel_tab@2x.jpg);
     }
   }
   @media screen and (min-width: $desctop) {
-    background-image: url(../img/Layer_desctop.jpg);
+    background-image: url(../img/04_Legion_5P_Intel_desctop.jpg);
     height: 1083px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/Layer_desctop@2x.jpg);
+      background-image: url(../img/04_Legion_5P_Intel_desctop@2x.jpg);
     }
   }
 }
-.game-productivity__title {
+
+.Geforse__title {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(123deg, #4facfe, #00f2fe);
 
-  position: absolute;
-
   display: inline-block;
 
   font-weight: 700;
   line-height: 1.2;
-  text-align: left;
 
   @media screen and (max-width: 767px) {
     font-size: 15px;
     left: 7%;
     top: 8%;
+    margin-bottom: 5px;
   }
   @media screen and (min-width: $tablet) and (max-width: 1599px) {
     font-size: 35px;
     left: 7%;
     top: 8%;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: $desctop) {
     font-size: 76px;
     left: 7%;
     top: 8%;
+    margin-bottom: 20px;
   }
 }
 
-.game-productivity__legion-open {
-  position: absolute;
+.Geforse__text {
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.03em;
   @media screen and (max-width: 767px) {
-    right: 40%;
-    top: 50%;
-    height: 30%;
+    font-size: 7px;
+    line-height: 1.07;
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1599px) {
-    height: 30%;
-    // width: 50%;
-    right: 55%;
-    top: 60%;
+    font-size: 10px;
+    line-height: 1.1;
   }
   @media screen and (min-width: $desctop) {
-    right: 45%;
-    top: 55%;
+    font-size: 24px;
+    line-height: 1.4;
   }
 }
-
-.game-productivity__legion-closed {
-  position: absolute;
-  @media screen and (max-width: 767px) {
-    right: 40%;
-    top: 20%;
-    height: 30%;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: 1599px) {
-    height: 30%;
-    // width: 50%;
-    right: 50%;
-    top: 30%;
-  }
-  @media screen and (min-width: $desctop) {
-    right: 50%;
-    top: 100%;
-    transform: translate(10%, -215%);
-  }
-}
-
-// .game-productivity__legion-closed {
-//   position: absolute;
-//   left: 50%;
-//   top: 50%;
-//   background-color: transparent;
-// }
-// .game-productivity__description {
-//   width: 35vw;
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-left: 60%;
-//   padding-top: 110px;
-// }
-// .game-productivity__icon {
-//   //   display: inline-block;
-//   width: 131px;
-//   height: 131px;
-// }
