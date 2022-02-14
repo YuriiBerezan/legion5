@@ -1,0 +1,116 @@
+.page-header {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    height: 271px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    height: 433px;
+  }
+  @media screen and (min-width: $desctop) {
+    height: 1083px;
+  }
+}
+
+.page-header__overlay {
+  // min-height: 1083px;
+  background-color: $main-color;
+  // width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: url(../img/Legion_mobile.jpg);
+    height: 271px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/Legion_mobile@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    background-image: url(../img/Legion_tab.jpg);
+    height: 433px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/Legion_tab@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $desctop) {
+    background-image: url(../img/Legion_desctop.jpg);
+    height: 1083px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/Legion_desctop@2x.jpg);
+    }
+  }
+}
+
+.page-header__legion-logo {
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    left: 7%;
+    top: 50%;
+    height: 100px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    left: 7%;
+    top: 45%;
+    height: 200px;
+  }
+  @media screen and (min-width: $desctop) {
+    left: 7%;
+    top: 8%;
+    height: 888px;
+  }
+  //   background-color: transparent;
+}
+
+.page-header__title {
+  position: absolute;
+
+  display: inline-block;
+
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 0.3;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    left: 20%;
+    bottom: 14%;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    font-size: 45px;
+    left: 20%;
+    bottom: 10%;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 98px;
+    left: 24%;
+    bottom: 12%;
+  }
+}
+
+.page-header__lenovo-logo {
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    right: 0;
+    bottom: 10%;
+    height: 75px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    right: 0;
+    bottom: 10%;
+    height: 150px;
+  }
+  @media screen and (min-width: $desctop) {
+    right: 0;
+    bottom: 10%;
+    height: 300px;
+  }
+}

@@ -1,0 +1,349 @@
+body {
+  font-family: Roboto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+button,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-header {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    height: 271px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header {
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    height: 1083px;
+  }
+}
+
+.page-header__overlay {
+  background-color: #212121;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__overlay {
+    background-image: url(../img/Legion_mobile.jpg);
+    height: 271px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .page-header__overlay {
+    background-image: url(../img/Legion_mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header__overlay {
+    background-image: url(../img/Legion_tab.jpg);
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .page-header__overlay {
+    background-image: url(../img/Legion_tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__overlay {
+    background-image: url(../img/Legion_desctop.jpg);
+    height: 1083px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .page-header__overlay {
+    background-image: url(../img/Legion_desctop@2x.jpg);
+  }
+}
+
+.page-header__legion-logo {
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__legion-logo {
+    left: 7%;
+    top: 50%;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header__legion-logo {
+    left: 7%;
+    top: 45%;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__legion-logo {
+    left: 7%;
+    top: 8%;
+    height: 888px;
+  }
+}
+
+.page-header__title {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  line-height: 0.3;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__title {
+    font-size: 20px;
+    left: 20%;
+    bottom: 14%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header__title {
+    font-size: 45px;
+    left: 20%;
+    bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__title {
+    font-size: 98px;
+    left: 24%;
+    bottom: 12%;
+  }
+}
+
+.page-header__lenovo-logo {
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__lenovo-logo {
+    right: 0;
+    bottom: 10%;
+    height: 75px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header__lenovo-logo {
+    right: 0;
+    bottom: 10%;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__lenovo-logo {
+    right: 0;
+    bottom: 10%;
+    height: 300px;
+  }
+}
+
+.game-productivity {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .game-productivity {
+    height: 271px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .game-productivity {
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .game-productivity {
+    height: 1083px;
+  }
+}
+
+.game-productivity__overlay {
+  background-color: #212121;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .game-productivity__overlay {
+    background-image: url(../img/layer_mobile.jpg);
+    height: 271px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .game-productivity__overlay {
+    background-image: url(../img/layer_mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .game-productivity__overlay {
+    background-image: url(../img/Layer_tab.jpg);
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .game-productivity__overlay {
+    background-image: url(../img/Layer_tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .game-productivity__overlay {
+    background-image: url(../img/Layer_desctop.jpg);
+    height: 1083px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .game-productivity__overlay {
+    background-image: url(../img/Layer_desctop@2x.jpg);
+  }
+}
+
+.game-productivity__title {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(123deg, #4facfe, #00f2fe);
+  position: absolute;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .game-productivity__title {
+    font-size: 15px;
+    left: 7%;
+    top: 8%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .game-productivity__title {
+    font-size: 45px;
+    left: 7%;
+    top: 8%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .game-productivity__title {
+    font-size: 76px;
+    left: 7%;
+    top: 8%;
+  }
+}
+
+.icon-intel::before {
+  background-image: url(../images/svg/intel.png);
+}
+
+.icon-16_::before {
+  background-image: url(../images/svg/16_.png);
+}
+
+.icon-rtx::before {
+  background-image: url(../images/svg/rtx.png);
+}
+
+.icon-AI::before {
+  background-image: url(../images/svg/AI.png);
+}
+
+.game-productivity__description {
+  width: 35vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60%;
+  padding-top: 110px;
+}
+
+.game-productivity__icon {
+  width: 131px;
+  height: 131px;
+}
+/*# sourceMappingURL=main.css.map */
