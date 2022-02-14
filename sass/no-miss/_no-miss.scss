@@ -1,4 +1,4 @@
-.new-level {
+.no-miss {
   position: relative;
   @media screen and (max-width: 767px) {
     height: 271px;
@@ -11,49 +11,49 @@
   }
 }
 
-.new-level__description {
-  width: 35vw;
+.no-miss__description {
+  width: 30vw;
   position: absolute;
-  top: 10%;
-  left: 60%;
+  top: 50%;
+  left: 5%;
   text-align: left;
 }
-.new-level__overlay {
+.no-miss__overlay {
   background-color: $main-color;
   // width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media screen and (max-width: 767px) {
-    background-image: url(../img/11A_Legion_5P_Hero_mobile.jpg);
+    background-image: url(../img/9_mobile.jpg);
     height: 271px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/11A_Legion_5P_Hero_mobile@2x.jpg);
+      background-image: url(../img/9_mobile@2x.jpg);
     }
   }
   @media screen and (min-width: $tablet) and (max-width: 1599px) {
-    background-image: url(../img/11A_Legion_5P_Hero_tab.jpg);
+    background-image: url(../img/9_tab.jpg);
     height: 433px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/11A_Legion_5P_Hero_tab@2x.jpg);
+      background-image: url(../img/9_tab@2x.jpg);
     }
   }
   @media screen and (min-width: $desctop) {
-    background-image: url(../img/11A_Legion_5P_Hero_desctop.jpg);
+    background-image: url(../img/9_desctop.jpg);
     height: 1083px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/11A_Legion_5P_Hero_desctop@2x.jpg);
+      background-image: url(../img/9_desctop@2x.jpg);
     }
   }
 }
 
-.new-level__title {
+.no-miss__title {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -84,17 +84,17 @@
   }
 }
 
-.new-level__text {
+.no-miss__text {
   color: rgb(255, 255, 255);
   letter-spacing: 0.03em;
   @media screen and (max-width: 767px) {
     font-size: 7px;
-    line-height: 1.07;
+    line-height: 0.95;
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1024px) {
-    font-size: 12px;
-    line-height: 1.1;
+    font-size: 11px;
+    line-height: 1.2;
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1599px) {
@@ -104,23 +104,5 @@
   @media screen and (min-width: $desctop) {
     font-size: 24px;
     line-height: 1.4;
-  }
-}
-.new-level__icon {
-  position: absolute;
-  @media screen and (max-width: 767px) {
-    left: 5%;
-    bottom: 5%;
-    height: 10%;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: 1599px) {
-    left: 5%;
-    bottom: 5%;
-    height: 15%;
-  }
-  @media screen and (min-width: $desctop) {
-    left: 6%;
-    bottom: 9%;
   }
 }

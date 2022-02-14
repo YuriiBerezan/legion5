@@ -103,9 +103,14 @@ $icons: "intel", "16", "rtx", "AI";
       line-height: 1.1;
     }
 
-    @media screen and (min-width: $tablet) and (max-width: 1599px) {
-      font-size: 10px;
+    @media screen and (min-width: $tablet) and (max-width: 1024px) {
+      font-size: 12px;
       line-height: 1.1;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1599px) {
+      font-size: 14px;
+      line-height: 1.08;
     }
     @media screen and (min-width: $desctop) {
       font-size: 24px;

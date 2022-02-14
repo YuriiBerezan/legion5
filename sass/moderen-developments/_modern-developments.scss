@@ -1,4 +1,4 @@
-.new-level {
+.modern-developments {
   position: relative;
   @media screen and (max-width: 767px) {
     height: 271px;
@@ -11,49 +11,56 @@
   }
 }
 
-.new-level__description {
-  width: 35vw;
+.modern-developments__description {
   position: absolute;
-  top: 10%;
-  left: 60%;
   text-align: left;
+  @media screen and (max-width: 767px) {
+    width: 35vw;
+    top: 10%;
+    left: 60%;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 36vw;
+    top: 15%;
+    left: 50%;
+  }
 }
-.new-level__overlay {
+.modern-developments__overlay {
   background-color: $main-color;
   // width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media screen and (max-width: 767px) {
-    background-image: url(../img/11A_Legion_5P_Hero_mobile.jpg);
+    background-image: url(../img/layer_mobile.jpg);
     height: 271px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/11A_Legion_5P_Hero_mobile@2x.jpg);
+      background-image: url(../img/layer_mobile@2x.jpg);
     }
   }
   @media screen and (min-width: $tablet) and (max-width: 1599px) {
-    background-image: url(../img/11A_Legion_5P_Hero_tab.jpg);
+    background-image: url(../img/Layer_tab.jpg);
     height: 433px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/11A_Legion_5P_Hero_tab@2x.jpg);
+      background-image: url(../img/Layer_tab@2x.jpg);
     }
   }
   @media screen and (min-width: $desctop) {
-    background-image: url(../img/11A_Legion_5P_Hero_desctop.jpg);
+    background-image: url(../img/Layer_desctop.jpg);
     height: 1083px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../img/11A_Legion_5P_Hero_desctop@2x.jpg);
+      background-image: url(../img/Layer_desctop@2x.jpg);
     }
   }
 }
 
-.new-level__title {
+.modern-developments__title {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -84,7 +91,7 @@
   }
 }
 
-.new-level__text {
+.modern-developments__text {
   color: rgb(255, 255, 255);
   letter-spacing: 0.03em;
   @media screen and (max-width: 767px) {
@@ -106,21 +113,21 @@
     line-height: 1.4;
   }
 }
-.new-level__icon {
+.modern-developments__icon {
   position: absolute;
   @media screen and (max-width: 767px) {
-    left: 5%;
-    bottom: 5%;
-    height: 10%;
+    right: 50%;
+    bottom: 20%;
+    height: 50%;
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1599px) {
-    left: 5%;
-    bottom: 5%;
-    height: 15%;
+    right: 65%;
+    bottom: 20%;
+    height: 50%;
   }
   @media screen and (min-width: $desctop) {
-    left: 6%;
-    bottom: 9%;
+    left: 5%;
+    bottom: 10%;
   }
 }
