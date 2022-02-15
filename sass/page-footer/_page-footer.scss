@@ -1,0 +1,412 @@
+.page-footer {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    height: 271px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    height: 433px;
+  }
+  @media screen and (min-width: $desctop) {
+    height: 1083px;
+  }
+}
+.page-footer__overlay {
+  background-color: $main-color;
+  // width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: url(../img/layer_12_mobile.jpg);
+    // height: 271px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/layer_12_mobile@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    background-image: url(../img/Layer_12_tab.jpg);
+    height: 433px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/Layer_12_tab@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $desctop) {
+    background-image: url(../img/Layer_12_desctop.jpg);
+    height: 1083px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/Layer_desctop@2x.jpg);
+    }
+  }
+}
+.page-footer__lenovo-logo {
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    right: 0;
+    top: 25%;
+    height: 75px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    right: 0;
+    top: 25%;
+    height: 150px;
+  }
+  @media screen and (min-width: $desctop) {
+    right: 0;
+    top: 25%;
+    height: 300px;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    padding: 5px 5px 5px 5px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    padding: 30px 30px 30px 50px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 50px 50px 50px 70px;
+  }
+  @media screen and (min-width: $desctop) {
+    height: 100%;
+  }
+}
+.page-footer__wrapper--first {
+  border-right: 1px solid #00daff;
+
+  @media screen and (max-width: 767px) {
+    width: 15%;
+    padding-right: 5px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-right: 20px;
+    width: 20%;
+  }
+}
+.page-footer__wrapper--fifth {
+  width: 20%;
+  @media screen and (max-width: 767px) {
+    padding-left: 5px;
+    width: 15%;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-left: 20px;
+    width: 20%;
+  }
+}
+
+.page-footer__wrapper--second,
+.page-footer__wrapper--third,
+.page-footer__wrapper--fourth {
+  border-right: 1px solid #00daff;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 5px;
+    width: 20%;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 0 20px;
+    width: 25%;
+  }
+}
+
+.processor,
+.os,
+.web-camera,
+.ozu,
+.display,
+.battery,
+.videocard,
+.wi-fi,
+.sound,
+.slots,
+.power-unit,
+.keyboard,
+.ssd,
+.weight,
+.dimensions,
+.color {
+  color: rgb(0, 243, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 6px;
+    line-height: 1.08;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    font-size: 10px;
+    line-height: 1.08;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    font-size: 12px;
+    line-height: 1.08;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+}
+
+.processor__description,
+.os__description,
+.web-camera__description,
+.ozu__description,
+.display__description,
+.battery__description,
+.videocard__description,
+.wi-fi__description,
+.sound__description,
+.slots__description,
+.power-unit__description,
+.keyboard__description,
+.ssd__description,
+.weight__description,
+.dimensions__description,
+.color__description {
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    font-size: 6px;
+    line-height: 0.95;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    font-size: 8px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    font-size: 10px;
+    line-height: 1.08;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+}
+
+.battery__description--lower {
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    font-size: 5px;
+    line-height: 0.95;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    font-size: 6px;
+    line-height: 1.1;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    font-size: 7px;
+    line-height: 1;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+}
+
+.processor__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 180px;
+  }
+}
+.os__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 70px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 120px;
+  }
+}
+.ozu__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 70px;
+  }
+}
+.display__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 120px;
+  }
+}
+
+.battery__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 5px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 30px;
+  }
+}
+
+.videocard__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 70px;
+  }
+}
+.wi-fi__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 120px;
+  }
+}
+
+.slots__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 120px;
+  }
+}
+
+.power-unit__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 70px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 150px;
+  }
+}
+
+.ssd__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 150px;
+  }
+}
+
+.weight__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 150px;
+  }
+}
+
+.dimensions__description {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 120px;
+  }
+}

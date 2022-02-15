@@ -57,7 +57,7 @@
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(123deg, #4facfe, #00f2fe);
+  background-image: linear-gradient(158deg, #4facfe, #00f2fe);
 
   display: inline-block;
 
@@ -92,7 +92,7 @@
     line-height: 0.95;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1024px) {
+  @media screen and (min-width: $tablet) and (max-width: 1023px) {
     font-size: 12px;
     line-height: 1.1;
   }

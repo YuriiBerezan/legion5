@@ -1,0 +1,108 @@
+.offline-work {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    height: 271px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    height: 433px;
+  }
+  @media screen and (min-width: $desctop) {
+    height: 1083px;
+  }
+}
+
+.offline-work__description {
+  width: 35vw;
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  text-align: left;
+}
+.offline-work__overlay {
+  background-color: $main-color;
+  // width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: url(../img/08_Legion_5P_mobile.png);
+    height: 271px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/08_Legion_5P_mobile@2x.png);
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    background-image: url(../img/08_Legion_5P_tab.png);
+    height: 433px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/08_Legion_5P_tab@2x.png);
+    }
+  }
+  @media screen and (min-width: $desctop) {
+    background-image: url(../img/08_Legion_5P_desctop.png);
+    height: 1083px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/08_Legion_5P_desctop@2x.png);
+    }
+  }
+}
+
+.offline-work__title {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(0, #4facfe, #00f2fe);
+
+  display: inline-block;
+
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 5px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1599px) {
+    font-size: 30px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 76px;
+    left: 7%;
+    top: 8%;
+    margin-bottom: 20px;
+  }
+}
+
+.offline-work__text {
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    font-size: 7px;
+    line-height: 0.95;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1024px) {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    font-size: 15px;
+    line-height: 1.08;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
